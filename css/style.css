@@ -4,4 +4,59 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* !COMMON */
+body {
+    color: white;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: inherit;
+}
+/* Utility */
+.flex {
+    display: flex;
+}
+/* !MAIN */
+main {
+    width: 100%;
+    height: 90vh;
+    padding: 50px 50px 20px;
+    /* debug */
+    background-color: black;
+}
+.container-top {
+    background-color: lightcoral;
+    height: 100%;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.card {
+    width: calc(100%/ 7);
+    height: calc(100% / 5);
+    position: relative;
+    padding: 0 5px 10px 0;
+    /* debug */
+    background-color: lightyellow;
+}
+.img {
+    height: 100%;
+    background-image: url(https://picsum.photos/id/91/300/200);
+    background-size: cover;
+    background-position: center;
+    /* debug */
+    /* background-color: lightseagreen; */
+}
+span {
+    position: absolute;
+    bottom: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 0 .2em;
+    font-size: .8rem;
+}
+/* !FOOTER */
+footer {
+    width: 100%;
+    height: 10vh;
+    /* debug */
+    background-color: lightslategray;
+}
